@@ -51,10 +51,15 @@ app.get('/api/players', (request, response) => {
 })
 
 app.get('/api/players/:id', (request, response) => {
-  const { id } = request.params;
+  const id = Number(request.params.id);
   const player = topFootballPlayers.find(i => i.id == id)
-  response.json(player);
-})
+  
+  if(player) {
+    response.json(player);
+  } else {
+    response.status(404).end();
+  }
+});
 
 const PORT = 3001;
 app.listen(PORT, () => {
