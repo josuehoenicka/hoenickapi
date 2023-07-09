@@ -53,12 +53,17 @@ app.get('/api/players', (request, response) => {
 app.get('/api/players/:id', (request, response) => {
   const id = Number(request.params.id);
   const player = topFootballPlayers.find(i => i.id == id)
-  
   if(player) {
     response.json(player);
   } else {
     response.status(404).end();
   }
+});
+
+app.delete('/api/players/:id', (request, response) => {
+  const id = Number(request.params.id);
+  const player = topFootballPlayers.filter(i => i.id !== id)
+  response.status(204).end()
 });
 
 const PORT = 3001;
