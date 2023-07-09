@@ -1,6 +1,6 @@
 const http = require('http')
 
-const objetos = [
+const topFootballPlayers = [
   {
     nombre: "Objeto 1",
     nationality: "Nacionalidad 1",
@@ -37,8 +37,8 @@ const objetos = [
 //   console.log(json);
 
 const app = http.createServer((request, response) => {
-    response.writeHead(200, {'Content-Type': 'text/plain'});
-    response.end("My server works...");
+    response.writeHead(200, {'Content-Type': 'application/json'});
+    response.end(JSON.stringify(topFootballPlayers));
 });
 
 const PORT = 3001;
