@@ -2,34 +2,29 @@ const http = require('http')
 
 const topFootballPlayers = [
   {
-    nombre: "Objeto 1",
-    nationality: "Nacionalidad 1",
+    nombre: "Messi",
+    nationality: "Argentinian",
     top: 1,
-    description: "Descripción del objeto 1"
   },
   {
-    nombre: "Objeto 2",
-    nationality: "Nacionalidad 2",
+    nombre: "Pelé",
+    nationality: "Brazilian",
     top: 2,
-    description: "Descripción del objeto 2"
   },
   {
-    nombre: "Objeto 3",
-    nationality: "Nacionalidad 3",
+    nombre: "Maradona",
+    nationality: "Argentinian",
     top: 3,
-    description: "Descripción del objeto 3"
   },
   {
-    nombre: "Objeto 4",
-    nationality: "Nacionalidad 4",
+    nombre: "C. Ronaldo",
+    nationality: "Portuguese",
     top: 4,
-    description: "Descripción del objeto 4"
   },
   {
-    nombre: "Objeto 5",
-    nationality: "Nacionalidad 5",
+    nombre: "Cruyff",
+    nationality: "Netherlander",
     top: 5,
-    description: "Descripción del objeto 5"
   }
 ];
   
